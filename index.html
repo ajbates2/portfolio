@@ -9,39 +9,44 @@
     <title>AJ Bates | Web Developer</title>
 </head>
 <body>
-    <nav>
-        <ul class="nav-menu">
-            <li>Home</li>
-            <li>Projects</li>
-            <li>About Me</li>
-            <li>Contact Me</li>
-        </ul>
+    <nav class="top-nav">
+      <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about-me">About Me</a>
+        <a href="#contact">Contact Me</a>
+            <img src="icons/hamburger.svg">
     </nav>
     <main>
-        <header>
-            <h1>Hi! My name is AJ Bates</h1>
-            <div class="hero-content">
-                <h2>
+        <header id="home" class="grid-header-container">
+            <h1 class="grid-header">Hello! This is AJ Bates</h1>
+                <h2 class="grid-header-info">
                     I am an aspiring Web Develepor specializing in JavaScript, and Jquery.
                 </h2>
-                <img src="images/headshot.jpg" alt="AJ Bates II headshot">
-            </div>
+                <div class="grid-header-img"><img src="images/headshot.jpg" alt="AJ Bates II headshot"></div>
         </header>
-        <section class="projects">
-            <h3>Projects</h3>
-                <div class="project">
-                    <img src="images/quiz-screenshot.png" alt="CoronaVirus Quiz Screenshot">
-                    <h4>Coronavirus Quiz</h4>
-                    <p class="description">
+        <section class="projects" id="projects">
+                <div class="project-grid">
+                    <h4 class="project-title">Coronavirus Quiz</h4>
+                    <img class="project-img" src="images/quiz-screenshot.png" alt="CoronaVirus Quiz Screenshot">
+                    <p class="project-desc">
                         A simple quiz testing your knowledge on the current pandemic sweeping the planet.
                     </p>
-                    <p>
+                    <p class="project-links">
+                        GitHub | Live App
+                    </p>
+                </div>
+                <div class="project-grid">
+                    <h4 class="project-title">Coronavirus Quiz</h4>
+                    <img class="project-img" src="images/quiz-screenshot.png" alt="CoronaVirus Quiz Screenshot">
+                    <p class="project-desc">
+                        A simple quiz testing your knowledge on the current pandemic sweeping the planet.
+                    </p>
+                    <p class="project-links">
                         GitHub | Live App
                     </p>
                 </div>
         </section>
-        <section class="about-me">
-            <h3>About Me</h3>
+        <section class="about-me" id="about-me">
             <p>
                 I am currently a student in the Full Stack Software Engineering program with Thinkful. I am excited to continue learning
                 and sharpening my skills as a web developer and problem solver. I love problem solving and the constant challenges
@@ -54,9 +59,9 @@
             </p>
         </section>
     </main>
-    <footer>
+    <footer id="Contact">
         <h3>Contact Info</h3>
-            <address>email | LinkedIn | GitHub</address>
+         <!--   <address>email | LinkedIn | GitHub</address>   -->
     </footer>
 </body>
 </html>
