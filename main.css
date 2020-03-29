@@ -121,6 +121,7 @@ section {
     grid-column-end: span 2;
     grid-row-start: 2;
     grid-row-end: 2;
+    padding: 20px 40px;
 }
 
 .project-links {
@@ -219,10 +220,10 @@ address {
     .project-title {
         grid-column-start: 2;
         grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
         color: black;
-        align-self: end;
+        align-self: start;
         margin: 0px;
         font-size: 20px;
     }
@@ -233,20 +234,16 @@ address {
         grid-row-start: 2;
         grid-row-end: 2;
         align-self: center;
+        padding: 30px 50px;
     }
     
     .project-links {
         grid-column-start: 2;
         grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 3;
-        align-self: start;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        align-self: end;
         margin: 0px;
     }
 }
 
-@media only screen and (min-width: 1200px) {
-    .projects img {
-        max-width: 500px;  
-    }
-}
