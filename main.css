@@ -127,8 +127,11 @@ section {
     grid-column-end: span 2;
     grid-row-start: 2;
     grid-row-end: 2;
+<<<<<<< HEAD
     padding: 20px 40px;
     line-height: 27px;
+=======
+>>>>>>> parent of 93d6a5f... updated project grid and removed project img resize
 }
 
 .project-links {
@@ -230,10 +233,10 @@ address {
     .project-title {
         grid-column-start: 2;
         grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
         color: black;
-        align-self: start;
+        align-self: end;
         margin: 0px;
         font-size: 25px;
         filter: none;
@@ -246,20 +249,24 @@ address {
         grid-row-start: 2;
         grid-row-end: 2;
         align-self: center;
+<<<<<<< HEAD
         padding: 30px 50px;
         color: #2C3A4F;
+=======
+>>>>>>> parent of 93d6a5f... updated project grid and removed project img resize
     }
     
     .project-links {
         grid-column-start: 2;
         grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 2;
-        align-self: end;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        align-self: start;
         margin: 0px;
     }
 }
 
+<<<<<<< HEAD
 @media only screen and (min-width: 1024px) {
     .grid-header {
         font-size: 39px;
@@ -267,5 +274,10 @@ address {
 
     .grid-header-info {
         max-width: 447px;
+=======
+@media only screen and (min-width: 1200px) {
+    .projects img {
+        max-width: 500px;  
+>>>>>>> parent of 93d6a5f... updated project grid and removed project img resize
     }
 }
