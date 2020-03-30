@@ -13,7 +13,7 @@ nav {
     left: 0;
     right: 0;
     z-index: 10;
-  }
+}
 
 .top-nav {
     display: flex;
@@ -22,7 +22,7 @@ nav {
     margin: 5px;
 }
 
-.top-nav a {
+#nav-links {
     display: none;
     text-decoration: none;
     color: black;
