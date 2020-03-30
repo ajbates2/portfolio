@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quattrocento Sans', sans-serif;
     margin: 0;
 }
 
@@ -29,7 +29,7 @@ nav {
 }
 
 header {
-    background-color: lightgrey;
+    background-color: #677B9C;
     padding: 50px;
     height: 500px;
 
@@ -42,11 +42,13 @@ header {
 }
 
 .grid-header {
+    font-family: 'Permanent Marker', cursive;
     grid-column-start: 1;
     grid-column-end: span 2;
     grid-row-start: 1;
     grid-row-end: 1;
     align-self: end;
+    color: lightcoral;
 }
 
 .grid-header-info {
@@ -70,6 +72,8 @@ header {
 header h2 {
     font-weight: 100;
     font-size: 18px;
+    line-height: 27px;
+    color: white;
 }
 
 header img {
@@ -83,9 +87,10 @@ section {
 }
 
 .projects {
-    background-color: gray;
+    background-color: #B0C6E8;
     text-align: center;
     padding-top: 75px;
+    color: #2C3A4F;
 }
 
 .project-grid {
@@ -114,6 +119,7 @@ section {
     align-self: center;
     z-index: 5;
     color: white;
+    filter: drop-shadow(2px 4px 5px #2C3A4F);
 }
 
 .project-desc {
@@ -122,6 +128,7 @@ section {
     grid-row-start: 2;
     grid-row-end: 2;
     padding: 20px 40px;
+    line-height: 27px;
 }
 
 .project-links {
@@ -141,12 +148,15 @@ section {
     background-color: white;
     padding: 50px 20px;
     margin: 20px 20px;
+    line-height: 35px;
+    font-size: large;
 }
 
 footer {
-    background-color: lightgray;
+    background-color: lightcoral;
     text-align: center;
     padding: 20px 10px 20px;
+    color: #2C3A4F
 }
 
 address {
@@ -189,7 +199,7 @@ address {
     .grid-header-info {
         align-self: start;
         justify-self: end;
-        max-width: 317px;
+        max-width: 367px;
     }
 
     .grid-header-img {
@@ -225,7 +235,9 @@ address {
         color: black;
         align-self: start;
         margin: 0px;
-        font-size: 20px;
+        font-size: 25px;
+        filter: none;
+        font-style: italic;
     }
     
     .project-desc {
@@ -235,6 +247,7 @@ address {
         grid-row-end: 2;
         align-self: center;
         padding: 30px 50px;
+        color: #2C3A4F;
     }
     
     .project-links {
@@ -247,3 +260,12 @@ address {
     }
 }
 
+@media only screen and (min-width: 1024px) {
+    .grid-header {
+        font-size: 39px;
+    }
+
+    .grid-header-info {
+        max-width: 447px;
+    }
+}
