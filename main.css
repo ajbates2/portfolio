@@ -128,8 +128,11 @@ section {
     grid-row-start: 2;
     grid-row-end: 2;
 <<<<<<< HEAD
+<<<<<<< HEAD
     padding: 20px 40px;
     line-height: 27px;
+=======
+>>>>>>> parent of 93d6a5f... updated project grid and removed project img resize
 =======
 >>>>>>> parent of 93d6a5f... updated project grid and removed project img resize
 }
@@ -250,8 +253,11 @@ address {
         grid-row-end: 2;
         align-self: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
         padding: 30px 50px;
         color: #2C3A4F;
+=======
+>>>>>>> parent of 93d6a5f... updated project grid and removed project img resize
 =======
 >>>>>>> parent of 93d6a5f... updated project grid and removed project img resize
     }
@@ -267,6 +273,7 @@ address {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media only screen and (min-width: 1024px) {
     .grid-header {
         font-size: 39px;
@@ -274,6 +281,11 @@ address {
 
     .grid-header-info {
         max-width: 447px;
+=======
+@media only screen and (min-width: 1200px) {
+    .projects img {
+        max-width: 500px;  
+>>>>>>> parent of 93d6a5f... updated project grid and removed project img resize
 =======
 @media only screen and (min-width: 1200px) {
     .projects img {
