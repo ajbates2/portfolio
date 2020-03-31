@@ -15,21 +15,45 @@ nav {
     z-index: 10;
 }
 
-.top-nav {
+#hamburger {
+    filter: invert(1);
+}
+
+#hamburger:hover {
+    cursor: pointer;
+}
+
+#top-nav {
     display: flex;
-    justify-content: flex-end;
-    list-style: none;
+    flex-direction: column;
+    align-items: flex-end;
     margin: 5px;
+    transition: top 0.3s;
 }
 
 #nav-links {
     display: none;
+    text-align: center;
+    list-style: none;
+    padding: 0px;
+    line-height: 25px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#nav-links a {
     text-decoration: none;
-    color: black;
+    color: #2C3A4F;
+    display: block;
+    padding: 10px;
+    background-color: lightcoral;
+    border-radius: 2px;
+    margin-bottom: 4px;
+    filter: drop-shadow(-1px 2px 2px #2C3A4F);
 }
 
 header {
-    background-color: lightgray;
+    background-color: #677B9C;
     padding: 50px;
     height: 500px;
 
@@ -42,12 +66,13 @@ header {
 }
 
 .grid-header {
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Permanent Marker', cursive;
     grid-column-start: 1;
     grid-column-end: span 2;
     grid-row-start: 1;
     grid-row-end: 1;
     align-self: end;
+    color: lightcoral;
 }
 
 .grid-header-info {
@@ -66,23 +91,19 @@ header {
     grid-row-end: 2;
     align-self: start;
     justify-self: center;
-    width: 125px;
-    height: 125px;
-    border-radius: 50%;
-    background-color: black;
 }
 
 header h2 {
     font-weight: 100;
     font-size: 18px;
     line-height: 27px;
+    color: white;
 }
 
 header img {
     max-width: 125px;
     max-height: 125px;
     border-radius: 50%;
-    background-color: white;
 }
 
 section {
@@ -90,9 +111,10 @@ section {
 }
 
 .projects {
-    background-color: gray;
+    background-color: #B0C6E8;
     text-align: center;
-    padding-top: 75px;;
+    padding-top: 75px;
+    color: #2C3A4F;
 }
 
 .project-grid {
@@ -110,10 +132,6 @@ section {
     grid-row-end: 1;
     justify-self: center;
     margin-bottom: 15px;
-    background-color: black;
-    width: 300px;
-    height: 300px;
-    border-radius: 4px;
 }
 
 .project-title {
@@ -143,9 +161,19 @@ section {
     grid-column-end: span 2;
     grid-row-start: 3;
     grid-row-end: 3;
+    align-self: start;
 }
 
-.projects img {
+.project-links img {
+    height: 35px;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.app-screenshot {
     max-width: 300px;
     filter: blur(2px);
     border-radius: 5%;
@@ -160,9 +188,10 @@ section {
 }
 
 footer {
-    background-color: gray;
+    background-color: lightcoral;
     text-align: center;
     padding: 20px 10px 20px;
+    color: #2C3A4F
 }
 
 address {
@@ -172,31 +201,6 @@ address {
     header img {
         max-width: 200px;
         max-height: 200px;
-    }
-
-    nav {
-        background-color: white;
-    }
-
-    .top-nav {
-        margin: 0px;
-        padding: 10px;
-
-    }
-
-    #nav-links {
-        display: contents;
-        text-decoration: none;
-    }
-
-    #nav-links a {
-        text-decoration: none;
-        color: black;
-        padding: 5px;
-    }
-    
-    .top-nav img {
-        display: none;
     }
 
     .grid-header {
@@ -221,15 +225,13 @@ address {
         grid-row-start: 1;
         grid-row-end: span 2;
         align-self: center;
-        width: 200px;
-        height: 200px;
     }
 }
 
 @media only screen and (min-width: 800px) {
-    .grid-header-img {
-        width: 250px;
-        height: 250px;
+    header img {
+        max-width: 250px;
+        max-height: 250px;
     }
 
     .project-img {
@@ -263,6 +265,7 @@ address {
         align-self: center;
         padding: 30px 50px;
         color: #2C3A4F;
+        font-size: larger;
     }
     
     .project-links {
@@ -272,6 +275,15 @@ address {
         grid-row-end: 3;
         align-self: start;
         margin: 0px;
+    }
+
+    .app-screenshot {
+        filter: none;
+    }
+
+    .app-screenshot:hover{
+        filter: blur(3px);
+        transition: 0.2s;
     }
 }
 
@@ -284,6 +296,7 @@ address {
         max-width: 447px;
     }
 }
+
 @media only screen and (min-width: 1200px) {
     .projects img {
         max-width: 500px;  
