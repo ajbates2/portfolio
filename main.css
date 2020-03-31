@@ -29,7 +29,7 @@ nav {
 }
 
 header {
-    background-color: #677B9C;
+    background-color: lightgray;
     padding: 50px;
     height: 500px;
 
@@ -42,13 +42,12 @@ header {
 }
 
 .grid-header {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Quattrocento Sans', sans-serif;
     grid-column-start: 1;
     grid-column-end: span 2;
     grid-row-start: 1;
     grid-row-end: 1;
     align-self: end;
-    color: lightcoral;
 }
 
 .grid-header-info {
@@ -73,7 +72,6 @@ header h2 {
     font-weight: 100;
     font-size: 18px;
     line-height: 27px;
-    color: white;
 }
 
 header img {
@@ -87,10 +85,9 @@ section {
 }
 
 .projects {
-    background-color: #B0C6E8;
+    background-color: gray;
     text-align: center;
-    padding-top: 75px;
-    color: #2C3A4F;
+    padding-top: 75px;;
 }
 
 .project-grid {
@@ -154,10 +151,9 @@ section {
 }
 
 footer {
-    background-color: lightcoral;
+    background-color: gray;
     text-align: center;
     padding: 20px 10px 20px;
-    color: #2C3A4F
 }
 
 address {
@@ -179,8 +175,15 @@ address {
 
     }
 
-    .top-nav a {
+    #nav-links {
         display: contents;
+        text-decoration: none;
+    }
+
+    #nav-links a {
+        text-decoration: none;
+        color: black;
+        padding: 5px;
     }
     
     .top-nav img {
@@ -268,7 +271,8 @@ address {
 
     .grid-header-info {
         max-width: 447px;
-
+    }
+}
 @media only screen and (min-width: 1200px) {
     .projects img {
         max-width: 500px;  
