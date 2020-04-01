@@ -7,6 +7,14 @@ body {
     margin: 0;
 }
 
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
 nav {
     position: fixed;
     top: 0;
