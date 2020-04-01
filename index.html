@@ -14,7 +14,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#about-me">About Me</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
         </ul>
         <img id="hamburger" src="icons/hamburger.svg">
     </nav>
@@ -23,6 +23,8 @@
             <h1 class="grid-header">Hello! This is AJ Bates</h1>
                 <h2 class="grid-header-info">
                     I am an aspiring Web Develepor specializing in JavaScript, and Jquery.
+                    <br><br><a class="grid-header-button" href='#contact-me'>
+                        Get in touch</a>
                 </h2>
                 <div class="grid-header-img"><img src="images/headshot.jpg" alt="AJ Bates II headshot"></div>
         </header>
@@ -33,32 +35,51 @@
                         <img class="app-screenshot" src="images/quiz-screenshot.png" alt="CoronaVirus Quiz Screenshot">
                     </a>
                     <p class="project-desc">
-                        A simple quiz testing your knowledge on the current pandemic sweeping the planet.
-                        <br>
-                        <br>I used HTML, CSS, JavaScript, and Jquery to build this app.
+                        A simple quiz testing your knowledge on the current pandemic
+                         sweeping the planet. I started building this app right at the end
+                          of March, and adding some mild Resident Evil references to add
+                           some levity to the crazy time we were going through.
                     </p>
-                    <p class="project-links">
+                    <div class="tech-used">
+                        <img src="icons/html5-logo.svg" alt="HTML5 logo">
+                        <img src="icons/css3-logo.svg" alt="CSS3 logo">
+                        <img src="icons/js-logo.svg" alt="JavaScript logo">
+                        <img src="icons/jquery logo.svg" alt="jQuery logo">
+                    </div>
+                    <div class="project-links">
+                        <p>My GitHub Repo</p>
                         <a href="https://github.com/ajbates2/coronavirus-quiz" target="_blank">
                             <img src="icons/github.svg" alt="github logo"></a>
-                    </p>
+                    </div>
                 </div>
         </section>
         <section class="about-me" id="about-me">
-            <p>
-                I am currently a student in the Full Stack Software Engineering program with Thinkful. I am excited to continue learning
-                and sharpening my skills as a web developer and problem solver. I love problem solving and the constant challenges
-                that are brought with learning JavaScript and all of the related tech.
+            <p class="technical-bio">
+                I am currently a student in the Full Stack Software Engineering program with
+                 Thinkful. I am excited to continue learning and sharpening my skills as a web
+                  developer and problem solver. I love problem solving and the constant
+                   challenges that are brought with learning JavaScript and all of the related
+                    tech. Having worked in a restaurant and in the service industry for
+                     essentially my whole life, I work great in a team, and  especially
+                      great in high stress situations.
             </p>
-            <p>
-                My love for technology is what ultimately pushed me to get into web development. I enjoy video games (built multiple PC's),
-                movies, and music. When I'm not coding you might find me bartending, I love beer, or going to see some live music, and just
-                like every other millennial I collect vinyl and shoes.
+            <p class="fun-bio">
+                My love for technology is what ultimately pushed me to get into web development.
+                 I enjoy video games (built multiple PC's), movies, and music. When I'm not
+                  coding you might find me bartending, I love beer, or going to see some live
+                   music, and just like every other millennial I collect vinyl and shoes.
             </p>
+            <img class="vinyl-icon" src="icons/vinyl-record.svg" alt="vinyl icon">
+            <img class="shoe-icon" src="icons/shoes.svg" alt="shoe icon">
         </section>
     </main>
-    <footer id="contact">
+    <footer id="contact-me">
         <h3>Contact Info</h3>
-         <!--   <address>email | LinkedIn | GitHub</address>   -->
+         <address>
+            <a href="mailto:aj.bates2.92@gmail.com"><img src="icons/email-logo.svg"></a>
+            <a href="https://www.linkedin.com/in/abates2/" target="_blank"><img src="icons/linkedin-logo.svg"></a>
+            <a href="https://github.com/ajbates2" target="_blank"><img src="icons/github.svg"></a>
+        </address>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="script.js"></script>

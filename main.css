@@ -55,14 +55,14 @@ nav {
 header {
     background-color: #677B9C;
     padding: 50px;
-    height: 500px;
-
+    height: 500px
 }
 
 .grid-header-container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-auto-rows: auto;
 }
 
 .grid-header {
@@ -73,6 +73,7 @@ header {
     grid-row-end: 1;
     align-self: end;
     color: lightcoral;
+    filter: drop-shadow(-2px 2px 0px #2C3A4F);
 }
 
 .grid-header-info {
@@ -82,6 +83,20 @@ header {
     grid-row-end: 2;
     align-self: start;
     justify-self: center;
+}
+
+.grid-header-button {
+    background-color: lightcoral;
+    border: none;
+    color: #2C3A4F;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.grid-header-button:hover {
+    background-color: white;
 }
 
 .grid-header-img {
@@ -156,7 +171,7 @@ section {
 
 }
 
-.project-links {
+.tech-used {
     grid-column-start: 1;
     grid-column-end: span 2;
     grid-row-start: 3;
@@ -164,8 +179,26 @@ section {
     align-self: start;
 }
 
+.tech-used img {
+    height: 30px;
+    margin: 10px;
+    color: #2C3A4F;
+}
+
+.project-links {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    align-self: end;
+}
+
 .project-links img {
     height: 35px;
+}
+
+.project-links img:hover {
+    filter: invert(1);
 }
 
 .project-links a {
@@ -187,11 +220,28 @@ section {
     font-size: large;
 }
 
+address img {
+    height: 30px;
+    margin: 25px;
+}
+
+address img:hover {
+    filter: invert(1);
+}
+
 footer {
     background-color: lightcoral;
     text-align: center;
     padding: 20px 10px 20px;
     color: #2C3A4F
+}
+
+.vinyl-icon {
+    display: none;
+}
+
+.shoe-icon {
+    display: none;
 }
 
 address {
@@ -238,7 +288,7 @@ address {
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 1;
-        grid-row-end: span 3;
+        grid-row-end: span 2;
         justify-self: center;
         align-self: center;
         margin-bottom: 0px;
@@ -262,10 +312,23 @@ address {
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 2;
-        align-self: center;
-        padding: 30px 50px;
+        align-self: start;
+        padding: 30px 50px 0px;
+        margin-bottom: 0px;
         color: #2C3A4F;
         font-size: larger;
+    }
+
+    .tech-used {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        align-self: end;
+    }
+
+    .tech-used img {
+        margin-bottom: 0px;
     }
     
     .project-links {
@@ -277,6 +340,10 @@ address {
         margin: 0px;
     }
 
+    .project-links p {
+        margin-top: 0px;
+    }
+
     .app-screenshot {
         filter: none;
     }
@@ -284,6 +351,50 @@ address {
     .app-screenshot:hover{
         filter: blur(3px);
         transition: 0.2s;
+    }
+
+    .about-me {
+        display: grid;
+        grid-template-columns: 85% 15%;
+        grid-template-rows: auto auto;
+        grid-auto-columns: auto;
+        grid-auto-rows: auto;
+    }
+
+    .technical-bio {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .fun-bio {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+    }
+
+    .vinyl-icon {
+        display: inherit;
+        height: 100px;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        justify-self: end;
+        align-self: start;
+    }
+    
+    .shoe-icon {
+        display: inherit;
+        height: 100px;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        justify-self: start;
+        align-self: center;
     }
 }
 
@@ -294,11 +405,5 @@ address {
 
     .grid-header-info {
         max-width: 447px;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .projects img {
-        max-width: 500px;  
     }
 }
