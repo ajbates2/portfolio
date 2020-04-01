@@ -191,6 +191,22 @@ section {
     grid-row-start: 4;
     grid-row-end: 4;
     align-self: end;
+    margin-top: 25px;
+}
+
+.project-links a {
+    background-color: lightcoral;
+    border: none;
+    color: #2C3A4F;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.project-links a:hover {
+    background-color: white;
 }
 
 .project-links img {
@@ -405,5 +421,18 @@ address {
 
     .grid-header-info {
         max-width: 447px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .grid-header-img {
+        display: none;
+    }
+
+    .grid-header-info {
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
     }
 }
