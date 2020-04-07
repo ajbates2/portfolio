@@ -23,10 +23,6 @@ nav {
     z-index: 10;
 }
 
-#hamburger {
-    filter: invert(1);
-}
-
 #hamburger:hover {
     cursor: pointer;
 }
