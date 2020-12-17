@@ -334,7 +334,7 @@ address {
         grid-row-start: 2;
         grid-row-end: 2;
         align-self: start;
-        padding: 30px 50px 0px;
+        padding: 30px 50px;
         margin-bottom: 0px;
         color: #2C3A4F;
         font-size: larger;
